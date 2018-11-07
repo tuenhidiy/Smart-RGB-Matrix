@@ -21,7 +21,7 @@ byte red[4][16];
 byte green[4][16];
 byte blue[4][16];
 
-int level=0;//keeps track of which level we are shifting data to
+int level=0; // Keeps track of which level we are shifting data to
 int row=0;
 int BAM_Bit, BAM_Counter=0; // Bit Angle Modulation variables to keep track of things
 
@@ -33,9 +33,9 @@ int BAM_Bit, BAM_Counter=0; // Bit Angle Modulation variables to keep track of t
 
 //*********** Defining the Matrix *************
 
-#define BAM_RESOLUTION 4    // EG 4 bit colour = 15 variation of R, G & B (4096 colours)
-const  byte Size_Y = 16;    //Number of Layers Y axis (levels/Layers)
-const  byte Size_X = 8;     //Number of LEDs X axis (Left to right across front)
+#define BAM_RESOLUTION 4    // EG 4 bit colour = 15 variation of R, G & B (16^3 = 4096 colours)
+const  byte Size_X = 16;    // Number of Column X axis
+const  byte Size_Y = 8;     // Number of Row Y axis
 //***************************************************Layer*********************************************************//
 
 #define COLOUR_WHEEL_LENGTH 256
